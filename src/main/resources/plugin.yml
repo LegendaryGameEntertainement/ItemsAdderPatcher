@@ -1,6 +1,19 @@
 name: ItemsAdderPatcher
 version: '${version}'
-
 main: mathrixte.itemsAdderPatcher.ItemsAdderPatcher
 api-version: '1.20'
 load: POSTWORLD
+
+depend:
+  - ItemsAdder
+
+commands:
+  iapatch:
+    description: Corrige manuellement le resource pack généré par ItemsAdder.
+    usage: /iapatch patch
+    permission: itemsadderpatcher.admin
+
+permissions:
+  itemsadderpatcher.admin:
+    description: Autorise la commande /iapatch.
+    default: op

@@ -1,0 +1,13 @@
+# Chemins relatifs au dossier racine du serveur.
+# Vérifie le nom et l'emplacement exacts du ZIP dans ton Pterodactyl.
+pack:
+  target: "plugins/ItemsAdder/output/generated.zip"
+
+font-patch:
+  files:
+    - "assets/minecraft/font/default.json"
+    - "assets/minecraft/font/uniform.json"
+
+  blocked-textures:
+    - "minecraft:item/armadillo_scute.png"
+    - "minecraft:item/turtle_scute.png"
